@@ -1,0 +1,36 @@
+
+body{
+  background: url(./images/qingbao-meng-01_igFr7hd4-unsplash.jpg);
+}
+
+button{
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active{
+  transform: scale(0.9);
+  background-color: chartreuse;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+}

@@ -1,0 +1,4 @@
+In JavaScript, using the addEventListener() method:
+The addEventListener() method is not supported in Internet Explorer 8 and earlier versions.
+
+https://www.w3schools.com/jsref/event_onchange.asp

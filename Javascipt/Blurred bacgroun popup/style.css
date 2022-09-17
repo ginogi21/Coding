@@ -1,0 +1,117 @@
+body{
+ margin: 0;
+ width: 100vw;
+}
+
+.container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 100vh;
+ justify-content: center;
+ background: url(./images/business.jpg) no-repeat center/cover;
+ text-align: center;
+ transition: filter 0.8s;
+}
+
+h1{
+ font-size: 4rem;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ letter-spacing: 2px;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+ color: #fff;
+}
+
+.btn{
+ padding: 10px 20px;
+ width: 250px;
+ cursor: pointer;
+ background-color: orangered;
+ border: none;
+ border-radius: 10px;
+ font-size: 1.1rem;
+ text-transform: uppercase;
+}
+
+.btn:hover{
+ filter: brightness(0.8);
+}
+
+.active.container{
+ filter: blur(7px) brightness(0.7);
+}
+
+.popup-container{
+ position: fixed;
+ transform: translate(-50%,-50%);
+ background-color: #fff;
+ left: 50%;
+ width: 400px;
+ height: 300px;
+ top: 50%;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ background: url(./images/business.jpg) no-repeat center/cover;
+ color: #fff;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ opacity: 1;
+ transition: all 0.8s ;
+}
+
+h4{
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: yellow;
+}
+
+label{
+ color: #fff;
+ font-family: sans-serif;
+}
+
+.popup-btn{
+ background-color: orangered;
+ padding: 10px;
+ font-size: 1.1rem;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ text-transform: uppercase;
+}
+
+.popup-btn:hover{
+ filter: brightness(0.8);
+}
+
+input{
+ border: 2px solid;
+ padding: 10px;
+ margin: 10px 0;
+ border-radius: 5px;
+ text-align: center;
+}
+
+.input::placeholder{
+ color: lightgrey;
+}
+
+.close-icon{
+ position: absolute;
+ top: 5px;
+ right: 20px;
+ font-size: 2rem;
+ color: #fff;
+ cursor: pointer;
+}
+
+.close-icon:hover{
+ color: orangered;
+}
+
+.active.popup-container{
+ visibility: hidden;
+ opacity: 0;
+ top: 10%;
+}

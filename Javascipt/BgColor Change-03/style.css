@@ -1,0 +1,11 @@
+#bgColor{
+  width: 150px;  
+  padding:5px 15px;
+  border: 10px solid rgb(73, 67, 67);
+  border-radius: 10px;
+  color: #fff;
+  font-size: large;
+  background-color: transparent;
+  color: rgb(136, 110, 110);
+  outline: none;
+}

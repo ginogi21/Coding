@@ -1,0 +1,9 @@
+<강의동영상>
+https://www.youtube.com/watch?v=DzSLUdJWrEQ&list=WL&index=1&t=2266s
+
+<Source Code>
+https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners
+
+
+<preloader download>
+https://icons8.com/preloaders/

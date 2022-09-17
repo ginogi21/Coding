@@ -1,0 +1,114 @@
+*, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --primary-light-hsl: 200, 100%, 91%;
+ --primary-hsl: 200, 100%, 50%;
+ --primary-dark-hsl: 200, 100%, 6%;
+ --success-hsl: 100, 60%, 50%;
+ --error-hsl: 0, 60%, 50%;
+}
+
+.container {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.btn{
+ display: inline-block;
+ font-size: 1rem;
+ padding:24px 70px;
+ background: hsl(var(--primary-hsl),0.8);
+ border-radius: 40px;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ position: relative;
+ box-shadow: 0 2px 20px rgba(0,130,255,0.5);
+ transition: all 0.5s ease;
+ z-index: 100;
+}
+
+.btn:active{
+ box-shadow: 0 2px 20px rgba(0,130,255,0.3);
+ transform: scale(0.9);
+}
+
+.btn span{
+ position: absolute;
+ font-size: 1.5rem;
+ transform: scale(0);
+ z-index: -1;
+}
+
+.btn span i{
+ z-index: -10;
+}
+
+
+button span:nth-child(1){
+ top: -30%;
+ left: -40%;
+}
+button span:nth-child(2){
+ top: -130%;
+ left: 20%;
+}
+button span:nth-child(3){
+ top: -60%;
+ left: 15%;
+}
+button span:nth-child(4){
+ top: 110%;
+ left: -30%;
+}
+button i:nth-child(5){
+ top: 110%;
+ left: 30%;
+}
+button span:nth-child(6){
+ top: -110%;
+ left: 50%;
+}
+button span:nth-child(7){
+ top: -80%;
+ left: 70%;
+}
+button span:nth-child(8){
+ top: -10%;
+ left: 120%;
+}
+button span:nth-child(9){
+ top: 60%;
+ left: 100%;
+}
+button span:nth-child(10){
+ top: 160%;
+ left: 70%;
+}
+
+.anim{
+ animation: moving 0.5s linear reverse forwards;
+}
+
+@keyframes moving{
+ 0%{
+  transform: scale(0);  
+ }
+ 25%{
+  transform: scale(0.5);
+ }
+ 50%{
+  transform: scale(1);
+ }
+ 100%{
+  top: 50%;
+  left: 50%;
+ }
+}

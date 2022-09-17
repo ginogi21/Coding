@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 원 만들기 */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.circle1 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* 1. 눈금 만들기 -> 원의 교차선을 만든다. */
+
+.circle1 .line {
+  position: absolute;
+  width: 598px;
+  background-color: black;
+}
+
+.circle1 .line.thick {
+  top: calc(50% - 2px);
+  height: 4px;
+  z-index: 1;
+}
+
+.circle1 .line.thin {
+  top: calc(50% - 0.5px);
+  height: 1px;
+}
+
+/* 2. 눈금 만들기 -> 첫원보다 작은 원 두개를 만들어 첫번째 원과 곁친다 */
+
+.circle2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 95%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/*  숫자 넣기 */
+
+.num-container {
+  position: absolute;
+  top: calc(50% - 30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  transform-origin: center 30px;
+}
+
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+
+.num.highlight {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* 바늘 만들기 */
+
+.hour-hand {
+  position: absolute;
+  bottom: calc(50% - 10px);
+  left: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20px;
+  height: 200px;
+  background-color: #000000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: rotate(45deg);
+  transform-origin: center 190px;
+  z-index: 3;
+}
+
+.hour-hand::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid black;
+  border-left: 10px solid transparent;
+}
+
+.minute-hand {
+  position: absolute;
+  bottom: calc(50% - 10px);
+  left: calc(50% - 8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 16px;
+  height: 250px;
+  background-color: #000000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: rotate(180deg);
+  transform-origin: center 240px;
+  z-index: 3;
+}
+
+.minute-hand::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  width: 0;
+  height: 0;
+  border-right: 8px solid transparent;
+  border-bottom: 32px solid black;
+  border-left: 8px solid transparent;
+}
+
+.second-hand {
+  position: absolute;
+  bottom: calc(50% - 30px);
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 320px;
+  background-color: orangered;
+  transform: rotate(300deg);
+  transform-origin: center 290px;
+  z-index: 3;
+}
+
+.white-space {
+  width: 50%;
+  height: 80%;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.center {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 4;
+}

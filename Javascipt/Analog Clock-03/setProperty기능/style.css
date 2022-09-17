@@ -1,0 +1,9 @@
+.trans{
+  margin-top: 20px;
+  width: 300px;
+  background-color: aquamarine;
+  text-align: center;
+  transform: translate(calc(var(--variableName)*2%),calc(var(--variableName)*5%));
+}
+
+/* 변수명(--variableName <-- '마음대로 작명')를 이용 */

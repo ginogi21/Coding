@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+  <script src="array.js" defer></script>
+</head>
+<style>
+/* Box만들기 */
+.container{
+  text-align: center;
+}
+.boxAdd{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom:2px solid darkgrey ;
+}
+.box-shadow{
+  width: 100px;
+  height: 50px;
+  margin: 1em 1em 1em 0;
+  background: aqua;
+}
+.box-shadow:nth-child(odd){
+  background: blue;
+}
+.box-shadow:nth-child(even){
+  background: rgb(169, 28, 194);
+}
+
+/* 색상변경하기 */
+.wrap{
+  text-align: center;
+}
+#btnColor{
+}
+.colorBox{
+  margin: 20px auto;
+  width: 400px;
+  height: 200px;
+  border: 1px solid gray;
+}
+</style>
+<body>
+  <div class="container">
+    <button id="btnBox">박스만들기</button>
+    <button id="deleteBox">박스없애기</button>
+    <div class="boxAdd"></div>
+  </div>
+  <br><br><br>
+  <div class="wrap">
+    <button id="btnColor">색상변경</button>
+    <div class="colorBox"></div>
+  </div>
+</body>
+</html>

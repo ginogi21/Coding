@@ -1,0 +1,18 @@
+ul{
+ list-style: none;
+ text-align: center;
+}
+ul li {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0;
+  background: #004FF9;
+  background: linear-gradient(to right, #FFF94C, #004FF9);
+}
+ul li.active{
+  color: red;
+  background: linear-gradient(to left, #FFF94C, #004FF9);
+  font-size: large;
+}
