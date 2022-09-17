@@ -1,0 +1,11 @@
+<강의동영상>
+1. html, CSS 강의영상
+https://youtu.be/ARBvYDNeNdM
+
+2. JavaScript 강의영상
+https://youtu.be/F4TfBopAmaY
+
+
+환율제공 API 
+https://apilayer.com/marketplace
+API Key : WGdNJoiHdAs1U7IyXlW4ssvINW4ZLOby

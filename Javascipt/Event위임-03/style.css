@@ -1,0 +1,9 @@
+input{
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+}
+
+.highlight{
+  background-color: aquamarine;
+}

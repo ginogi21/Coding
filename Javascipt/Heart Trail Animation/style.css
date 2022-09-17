@@ -1,0 +1,68 @@
+body{
+ margin: 0;
+ height: 100vh;
+ background-color: #000;
+ overflow: hidden;
+}
+
+span{
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform:translate(-50%,-50%);
+ pointer-events: none;
+ animation: animate 6s linear;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@keyframes animate {
+ 0%{
+  transform: translate(-50%, -50%);
+  opacity: 1;
+ }
+ 100%{
+  transform: translate(-50%, -5000%);
+  opacity: 0;
+ }
+}
+
+
+/* Heart color를 바꾸는 다른 방법 */
+
+/* span{
+ background: url(./images/heart_icon.png) center/cover;
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform:translate(-50%,-50%);
+ pointer-events: none;
+ animation: animate 6s linear;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+@keyframes animate {
+ 0%{
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  filter: hue-rotate(0);
+ }
+ 100%{
+  transform: translate(-50%, -5000%);
+  opacity: 0;
+  filter: hue-rotate(720deg);
+ }
+}
+
+javascript에서 8번째 줄,
+newSpan.innerHTML = `<i class="fa-solid fa-heart"></i>를 없애고,
+
+Heart색 random하게 바꾸기를 없앤다. */

@@ -1,0 +1,52 @@
+
+body{
+ background:url(../images/qingbao-meng-01_igFr7hd4-unsplash.jpg);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+h2{
+ text-align: center;
+ font-size: 2rem;
+ letter-spacing: 0.2rem;
+ text-transform: uppercase;
+ color: rgba(255, 255, 255, 0.5);
+}
+.clock{
+ display: flex;
+ position: relative;
+}
+.clock div{
+ margin: 0.5rem; 
+}
+.clock span{
+ width: 7rem;
+ height: 5.5rem;
+ background: slateblue;
+ opacity: 0.8;
+ color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 3.5rem;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clock .text{
+ height: 2rem;
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ background: darkblue;
+ letter-spacing: 0.2rem;
+}
+#ampm{
+ position: absolute;
+ bottom: 0;
+ width: 6rem;
+ height: 3rem;
+ font-size: 2rem;
+ background: green;
+}

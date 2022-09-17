@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ccc;
+}
+
+main{
+  width: 75%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #eee;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+h1{
+  font-size: 3rem;
+  width: 100%;
+  font-weight: 600;
+  padding: 10px 0;
+  background: cadetblue;
+  border-bottom: 1px solid black;
+}
+
+.value{
+  margin: 50px;
+  font-size: 7rem;
+}
+
+/* Bootstrap일 이용해서 Button Design함 */
+
+button{
+  margin: 20px 5px;
+}

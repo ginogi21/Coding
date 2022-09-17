@@ -1,0 +1,22 @@
+https://www.youtube.com/watch?v=DzSLUdJWrEQ&list=WL&index=1&t=2266s
+
+
+https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners
+
+
+< new Date()함수의 의미>
+new Date(year, month, day, ..)에서 
+new Date(0,0,1)이면 ==>  Mon Jan 01 1900 00:00:00 GMT+0827 (한국 표준시)로 표시됨
+
+따라서
+- year : 0 이면 ==> 1900년을 의미 즉 ==> Sun Dec 30 "1900" 00:00:00 GMT+0827 (한국 표준시)로 표시
+         1 이면 ==> 1901년을 의미 즉 ==> Mon Dec 30 "1901" 00:00:00 GMT+0827 (한국 표준시)
+
+- month : 0 이면 ==>January을 의미 즉 ==> Wed "Jan" 30 1901 00:00:00 GMT+0827 (한국 표준시)
+          1 이면 ==>Febuary을 의미 즉 ==> Wed "Feb" 30 1901 00:00:00 GMT+0827 (한국 표준시)
+         따라서, 0 ~ 11 까지 표시함 ==> 1주일이 7일이므로
+          7 이면 다시 
+
+- day :  1이면 ==> 즉 new Date(0,0,1)이면 ==>  Mon Jan "01" 1900 00:00:00 GMT+0827 (한국 표준시)로 표시됨
+        31이면 ==> 즉 new Date(0,0,30)이면 ==> Tue Jan "31" 1900 00:00:00 GMT+0827 (한국 표준시)
+        32이면 ==> 즉 new Date(0,0,32)이면 ==> Thu "Feb 01" 1900 00:00:00 GMT+0827 (한국 표준시)

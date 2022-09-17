@@ -1,0 +1,19 @@
+.menu{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-link{
+  width: 80%;
+  height: 50px;
+  margin: 10px;
+  background-color: aquamarine;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.active{
+  background-color: rgb(204, 115, 231);
+}

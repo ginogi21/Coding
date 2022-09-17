@@ -1,0 +1,37 @@
+.container{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: darkgray;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+}
+
+button{
+  border: none;
+  margin: 0 5px;
+  padding: 0;
+  width: 200px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+img{
+  position: absolute;
+  left: 0;
+  width: 50%;
+/*   pointer-events: none; */
+}
+
+p{
+  position: absolute;
+  right: 3px;
+/*   pointer-events: none; */
+}

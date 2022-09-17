@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background:#E3FDFD;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root{
+  --posX :0;
+}
+
+.myProgress{
+  width: 80%;
+  background-color: grey;
+  transition: all 0.5s linear;
+}
+
+.myBar{
+  width:var(--posX);
+  height: 30px;
+  background-color: green;
+  position: relative;
+}
+/* .myBar의 width변화와 span Tag내 Text가 같이 움직이도록 함 */
+span{
+  position: absolute;
+  top: 20%;
+  font-size: 15px;
+  right: -30px;
+}
