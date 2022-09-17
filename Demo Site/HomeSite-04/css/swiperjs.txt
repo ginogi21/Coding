@@ -1,0 +1,10 @@
+<swiper-bundle.min.css>는 화면이동을 위한 것으로
+
+우선 https://swiperjs.com/demos#thumbs-gallery 로 가서
+
+https://codesandbox.io/s/tjxb1s?file=/index.html 로 가고
+
+https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css <== 를 복사함
+
+
+Tutorial Site : https://youtu.be/-UrCGKE3xhM
