@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #cfe9ff;
+}
+
+.button{
+  position: relative;
+  height: 95px;
+  width: 360px;
+  background-color: #2a3de8;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  overflow: hidden;
+}
+
+
+.button .content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  transition-delay: 0.2s;
+}
+
+.button .content i, .button .content .button-text{
+  color: #fff;
+  font-size: 40px;
+}
+
+.button-text{
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.percent{
+  font-size: 1.4rem;
+  font-weight: bold;
+  transform: translateY(100%);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #2a3de8;
+  border-radius: 55px;
+  transition: all 6s ease-in-out;
+}
+
+.progress-bar.active .button::before{
+  animation: layer 6s ease-in-out forwards;
+}
+.progress-bar.active .button{
+  height: 20px;
+  width: 500px;
+  background: #a7a7a7;
+}
+.progress-bar.active .button .content{
+  transform: translateY(60px);
+}
+.progress-bar.active .percent{
+  transform: translate(0);
+}
+
+@keyframes layer{
+  100%{
+    left: 0;
+  }
+}

@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box2" ;
+}
+
+.box1{
+  background: green;
+}
+.box2{
+  background: rgb(109, 109, 187);
+}
+.box3{
+  background: yellow;
+}
+
+.box1{
+  grid-area: box1;
+}
+.box2{
+  grid-area: box2;
+}
+.box3{
+  grid-area: box3;
+}
+
+input{
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background: rgb(219, 198, 198);
+}

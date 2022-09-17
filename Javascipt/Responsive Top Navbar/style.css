@@ -1,0 +1,109 @@
+:root {
+  --fontColor: #f0f7fa;
+  --bgColor: #d49466;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}  
+
+.navbar_logo {
+  font-size: 36px;
+  color: var(--fontColor);
+}
+
+.navbar_logo i {
+  color: var(--bgColor);
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+  border-radius:3px;
+  background-color : var(--bgColor);
+}
+
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+.fa-facebook {
+  color: rgb(9, 243, 60);
+  font-size: 26px;
+}
+
+.fa-youtube {
+  color: red;
+  font-size: 26px;
+}
+
+.navbar_toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 32px;
+  color: var(--bgColor);
+}
+
+@media screen and (max-width:768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar_menu li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar_icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar_toggleBtn{
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+
+}

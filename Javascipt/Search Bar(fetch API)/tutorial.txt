@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=TlP5WIxVirU&ab_channel=WebDevSimplified
+
+
+fetch() API함수 사용법 : 아래 웹사이트 참조
+https://jsonplaceholder.typicode.com/guide/
+
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then((response) => response.json())
+  .then((json) => console.log(json));
