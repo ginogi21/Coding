@@ -1,0 +1,43 @@
+figure{
+  position: relative;
+  width: 1000px;
+}
+
+figure img{
+  width: 1000px;
+  border-radius: 10px;
+}
+
+figure h1{
+  background-color:black;
+  color: #ffff;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 1.5em;
+
+}
+figure ul{
+  display: block;
+  background-color: rgba(207, 211, 211, 0.28);
+  border-radius: 6px;
+  list-style: circle;
+  line-height: 1.5em;
+  padding-left: 18px;
+
+}
+fiqure ul li span{
+  color :crimson;
+  font-weight: bold;
+}
+.fa{
+  color: red;
+  font-size: 50px;
+}
+.fab{
+  color: blue;
+  font-size: 50px;
+}
+.fas{
+  color: rgb(53, 80, 32);
+  font-size: 50px;
+}

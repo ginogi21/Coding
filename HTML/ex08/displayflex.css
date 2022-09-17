@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  margin: 30px;
+  padding: 5;
+}
+.base{
+  width: 1200px;
+  height: 300px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+
+}
+.redBox{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  vertical-align: middle;
+  line-height: 150px;
+  text-align: center;
+
+}
+.blueBox{
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  line-height: 150px;
+  text-align: center;
+  order: 1;
+}
+.greenBox{
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  line-height: 150px;
+  text-align: center;
+  order: 2;
+}
+.purpleBox{
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  line-height: 150px;
+  text-align: center;
+  order: 3;
+}
+.span{
+  font-size: 45px;
+  margin-bottom: auto;
+  margin-top: auto;
+}

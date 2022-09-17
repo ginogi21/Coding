@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:montserrat, sans-serif;
+  background: #333;
+}
+h1{
+  font-size: 300px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 30px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  background: url(/image/flower-4610696_1920.jpg) 50% 50%;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
+p{
+  font-size: 300px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 30px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  background:linear-gradient(to right, red,blue);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+svg{
+  display: block;
+  width: 400px;
+  height: 100px;
+  border:1px solid red;
+}
+svg text{
+  fill: none;
+  stroke: red;
+  s
+}

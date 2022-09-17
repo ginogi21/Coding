@@ -1,0 +1,25 @@
+body{
+  font-size: 18px;
+}
+table{
+  width: 900px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+td,th{
+  text-align: center;
+  padding: 5px;
+  border-top:1px solid rgb(182, 182, 182);
+}
+th{
+  background:radial-gradient(circle at center center,rgba(0, 0, 255, 0.397), rgba(255, 0, 0, 0.281));
+  color: rgb(248, 7, 7);
+}
+caption{
+  text-align: right;
+  margin: 2px;
+}
+tfoot td{
+  background:linear-gradient(to right, rgba(0, 0, 255, 0.3),rgba(255, 0, 0, 0.3));
+  text-align: left;
+}

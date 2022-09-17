@@ -1,0 +1,39 @@
+body{
+  padding: 50px;  
+}
+
+.graph{
+  height: 40px;
+  margin: 0 0 30px;
+  background: #ccc;
+  border-radius: 40px;}
+
+.graph span{
+  display: block;
+  padding: 0 10px;
+  height: 40px; line-height: 40px; text-align: right;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #fff;
+
+}
+.graph.stack1 span{ background: rgb(241, 14, 59);animation: stack1 2s 2;}
+.graph.stack2 span{ background: rgb(67, 220, 20);animation: stack2 2s 2;}
+.graph.stack3 span{ background: rgb(64, 10, 189);animation: stack3 2s 2;}
+
+
+@keyframes stack1{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 75%;}
+}
+@keyframes stack2{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 60%;}
+}
+@keyframes stack3{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 25%;}
+}

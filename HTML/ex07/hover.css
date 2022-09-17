@@ -1,0 +1,16 @@
+div.paging a{
+  border:1px solid gray;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 2px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  line-height: 30px;
+}
+.paging a:hover,.paging a:focus{
+  border: 1px solid crimson;
+  background-color: blueviolet;
+  color: #fff;
+}

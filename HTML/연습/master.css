@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #81ecec;
+  }
+
+.check-box{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:#ffeaa7;
+  height: 40px;
+  border-radius: 10px; border-color: red;
+  padding: 10px;
+}
+
+.check-btn{
+  color:#8c7ae6;
+  float: right;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background:#d63031;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.check-text{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}

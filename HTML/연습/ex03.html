@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상클래스 before after</title>
+  <style>
+    ul{
+      list-style: decimal;
+
+    }
+    ul li.new:after {
+        content: 'new';
+        background-color: dodgerblue;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 13px;
+        padding: 0 5px;
+        margin-left: 5px;
+    }
+    ul li.hot:before {
+        content:'hot';
+        background-color: rgb(255, 30, 41);
+        color: #fff;
+        border-radius: 3px;
+        font-size: 13px;
+        padding: 0 5px;
+        margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>빅티킨 마요-3,500원</li>
+    <li class="hot">돈치마요-3,500원</li>
+    <li class="new">치킨 샐러드마요-3,400원</li>
+    <li>치킨마요-2,900원</li>
+  </ul>
+</body>
+</html>

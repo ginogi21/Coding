@@ -1,0 +1,37 @@
+.wrapper{
+  /* display: flex ; */
+  /* (방법1) display: flex;를 이용하는 방법 */
+  /* display: table; */
+  /* width: 100%; */
+  /* (방법2) display: table;를 이용하는 방법 */
+}
+.main,.side{
+  font-size: 30px;
+  text-align: center;
+  height: 300px;
+  line-height: 300px;
+  color: #fff;
+  /* display:table-cell; */
+  /* (방법2) display: table;를 이용하는 방법 */
+  float: left;
+  /* (방법3) width:calc();를 이용하는 방법 */
+}
+.main{
+  background-color: dodgerblue;
+  /* flex:1; */
+  /* (방법1) display:flex;를 이용하는 방법 */
+  width: calc(100% - 300px);
+/*   (방법3) width:calc();를 이용하는 방법:
+  - flexible하게 움직이는 곳에 width:calc()를 사용 
+  - "-"부호의 앞뒤로 한칸씩 띄어쓰기 해야함  */
+  width: -webkit-calc(100% - 300px);
+  width: -moz-calc(100% - 300px);
+  width: -o-calc(100% - 300px);
+  width: -ms-calc(100% - 300px);
+  /* 유저 브라우저에 맞추기 위해 vendor prefix를 해줌 */
+}
+.side{
+  background-color:crimson;
+  width: 300px;
+
+}
