@@ -1,0 +1,41 @@
+.bouncing_ball {
+  width: 100px;
+  height: 90vh;
+  /* border: 1px solid lightgrey; */
+  position: relative;
+  margin: 0 auto;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(179, 32, 32);
+  position: absolute;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+
+  34% {
+    transform: scale(1, 1);
+  }
+
+  35% {
+    top: 85vh;
+    animation-timing-function: ease-out;
+    transform: scale(1.2, 0.8);
+  }
+
+  37% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    top: 0;
+  }
+}
